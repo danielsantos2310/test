@@ -1,0 +1,124 @@
+/* Estilos gerais para a página de tarefas */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#task-container {
+    text-align: center;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto com transparência */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 300px;
+}
+
+h1 {
+    color: #f44336; /* Vermelho */
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 8px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+/* Estilo do campo de texto */
+input {
+    background-color: #333; /* Fundo escuro */
+    color: white;
+    transition: background-color 0.3s;
+}
+
+input:focus {
+    background-color: #444; /* Leve mudança de cor ao focar */
+}
+
+button {
+    background-color: #f44336; /* Botão vermelho */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e53935; /* Mudança suave ao passar o mouse */
+}
+
+/* Estilos do logout */
+#logout-btn {
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#logout-btn:hover {
+    background-color: #666;
+}
+
+/* Estilos da lista de tarefas */
+#task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#task-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%; /* Garante que o item ocupe a largura total do container */
+}
+
+#task-list li.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+span {
+    word-wrap: break-word;  /* Garante que as palavras longas se quebrem */
+    overflow-wrap: break-word; /* Assegura que palavras longas não saiam do container */
+    max-width: calc(100% - 30px); /* Limita a largura do texto, para dar espaço ao checkbox */
+    text-align: left; /* Alinha o texto à esquerda */
+    white-space: normal; /* Permite a quebra de linha natural */
+}
+
+
+
+/* Estilo do botão de remover (emoji) */
+.remove-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem; /* Tamanho adequado ao emoji */
+    cursor: pointer;
+    padding: 0; /* Remover padding */
+    width: 28px; /* Definindo a largura do botão */
+    height: 28px; /* Definindo a altura do botão */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza o emoji no botão */
+    margin-left: 10px; /* Espaço entre o checkbox e o botão */
+}
+
+.remove-btn:hover {
+    color: #f44336; /* Cor do emoji ao passar o mouse */
+}
+
+
