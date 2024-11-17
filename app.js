@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
         taskCheckbox.checked = completed;
 
         taskCheckbox.addEventListener('change', () => {
-            taskItem.classList.toggle('completed', taskCheckbox.checked);
             updateTaskStatus();
         });
 
@@ -54,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const tasks = [];
         document.querySelectorAll('#task-list li').forEach(taskItem => {
             const taskText = taskItem.querySelector('span').textContent;
-            const completed = taskItem.classList.contains('completed');
+            const completed = taskItem.querySelector('input[type="checkbox"]').checked;
             tasks.push({ text: taskText, completed });
         });
         saveTasks(tasks);
@@ -74,8 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const taskText = taskInput.value.trim();
         if (taskText) {
             addTaskToList(taskText);
-            taskInput.value = ''; // Limpar o campo de entrada
-            updateTaskStatus();  // Atualizar o status das tarefas
+            taskInput.value = ''; // Limpar campo de entrada
+            updateTaskStatus();
         }
     });
 });

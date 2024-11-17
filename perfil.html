@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+    <!-- Menu de navegação -->
+    <div id="menu">
+        <ul>
+            <li><a href="app.html">Checklist</a></li>
+            <li><a href="destinos.html">Destinos</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+        </ul>
+    </div>
+
+    <!-- Container do Perfil -->
+    <div id="profile-container">
+        <h1>Perfil de Usuário</h1>
+
+        <!-- Formulário de entrada de nome e email -->
+        <div id="profile-form">
+            <input type="text" id="user-name" placeholder="Digite seu nome" />
+            <input type="email" id="user-email" placeholder="Digite seu email" />
+            <button id="save-profile-btn">Salvar</button>
+        </div>
+
+        <!-- Exibição dos dados -->
+        <div id="profile-info">
+            <h2 id="profile-name"></h2>
+            <p id="profile-email"></p>
+        </div>
+
+        <!-- Botão de Logout -->
+        <button id="logout-btn">🚪 Sair</button>
+    </div>
+
+    <!-- Script JS -->
+    <script src="perfil.js"></script>
+</body>
+</html>

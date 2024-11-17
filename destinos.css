@@ -1,4 +1,4 @@
-/* Estilos gerais para a página de tarefas */
+/* Estilos gerais para a página de destinos */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #121212; /* Fundo escuro */
@@ -45,7 +45,7 @@ body {
     color: #f44336;
 }
 
-/* Centraliza o título na box de listas */
+/* Centraliza o título na box de destinos */
 h1 {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
@@ -53,21 +53,21 @@ h1 {
     color: #f44336;
     font-size: 2rem;
     margin-bottom: 20px;
-    text-align: center; /* Garante que o texto também fique centralizado */
+    text-align: center;
 }
 
-/* Atualiza a box das listas para garantir que o conteúdo se alinhe no centro */
-#task-container {
+/* Box de destinos */
+#destino-container {
     text-align: center;
     padding: 30px;
-    background-color: #1e1e1e; /* Fundo mais escuro */
+    background-color: #1e1e1e;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
     width: 90%;
     max-width: 500px;
     display: flex;
-    flex-direction: column; /* Garantir que os elementos sejam empilhados */
-    align-items: center; /* Centraliza todos os elementos dentro da box */
+    flex-direction: column;
+    align-items: center;
 }
 
 input, button {
@@ -116,8 +116,8 @@ button:active {
     background-color: #555;
 }
 
-/* Estilização da lista de tarefas */
-#task-list {
+/* Estilização da lista de destinos */
+#destino-list {
     list-style-type: none;
     padding: 0;
     margin-top: 20px;
@@ -126,7 +126,7 @@ button:active {
 }
 
 /* Animações para os itens da lista */
-#task-list li {
+#destino-list li {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -137,13 +137,7 @@ button:active {
     word-wrap: break-word;
     opacity: 0;
     transform: translateY(10px);
-    animation: fadeIn 0.5s forwards; /* Adiciona animação de fade-in */
-}
-
-/* Estilo para checkbox */
-input[type="checkbox"] {
-    accent-color: #f44336; /* Cor do checkbox ajustada para um tom de vermelho */
-    margin-right: 15px;
+    animation: fadeIn 0.5s forwards;
 }
 
 /* Estilo do botão de remover (emoji) */
@@ -151,19 +145,19 @@ input[type="checkbox"] {
     background-color: transparent;
     border: none;
     color: white;
-    font-size: 1.5rem; /* Tamanho adequado ao emoji */
+    font-size: 1.5rem;
     cursor: pointer;
-    padding: 0; /* Remover padding */
-    width: 28px; /* Definindo a largura do botão */
-    height: 28px; /* Definindo a altura do botão */
+    padding: 0;
+    width: 28px;
+    height: 28px;
     display: flex;
     justify-content: center;
-    align-items: center; /* Centraliza o emoji no botão */
-    margin-left: 10px; /* Espaço entre o checkbox e o botão */
+    align-items: center;
+    margin-left: 10px;
 }
 
 .remove-btn:hover {
-    color: #f44336; /* Cor do emoji ao passar o mouse */
+    color: #f44336;
 }
 
 /* Keyframes para animação de fade-in */
